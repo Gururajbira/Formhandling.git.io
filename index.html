@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <form name="myForm" id="myForm">
+
+
+        <div id="form-container">
+            <h1>Form Handling</h1>
+            <br><br>
+            <!-- <label for="fname"> First Name : </label> -->
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <br><br>
+            <!-- <label for="lname"> Last Name : </label> -->
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <br><br>
+            <button onclick="validate()">Click</button>
+
+        </div>
+    </form>
+
+    <script>
+
+        function validate() {
+            var fname = document.forms["myForm"]["fname"].value;
+            var lname = document.forms['myForm']['lname'].value;
+
+            alert("your name is : " + fname + " &  your last name is : " + lname)
+
+        }
+
+    </script>
+</body>
+
+</html>
